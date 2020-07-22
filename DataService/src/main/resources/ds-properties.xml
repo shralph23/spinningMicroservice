@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<entry key="getRequestJsonSchema">
+	<![CDATA[
+{
+    "title": "DataServiceRequestSchema",
+    "type": "object",
+    "properties": {
+        "RequestMetaData": {
+            "type": "object",
+            "required": [
+                "RequestIdentifier",
+                "RequestSourceSystem",
+                "RequestRecordCount"
+            ],
+            "description": "The Request MetaData for the input request.",
+            "properties": {
+                "RequestIdentifier": {
+                    "type": "string",
+                    "description": "The Request Identifier for the request; must be 36 characters in length.",
+                    "minLength": 36,
+                    "maxLength": 36,
+                    "not": {
+                        "enum": [
+                            "null"
+                        ]
+                    }
+                },
+                "RequestSourceSystem": {
+                    "type": "string",
+                    "description": "The Request Source System for request; must be not null and 1 to 100 characters in length.",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "not": {
+                        "enum": [
+                            "null"
+                        ]
+                    }
+                },
+                "RequestTimeStamp": {
+                    "type": "string",
+                    "description": "The Request TimeStamp for the request."
+                },
+                "RequestRecordCount": {
+                    "type": "integer",
+                    "description": "The Request Record Count for submissions in the request; must be not null and value must be between 1 and 100.",
+                    "not": {
+                        "enum": [
+                            "null"
+                        ]
+                    }
+                }
+            }
+        },
+        "Submissions": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "description": "Submission container array with size between 0 and 100.",
+            "minItems": 0,
+            "maxItems": 100,
+            "items": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            }
+        }
+    }
+}
+	]]>
+	</entry>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.springframework.ide.eclipse.boot.launch">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ESafeDataService/src/main/java/com/freddiemac/datamanager/ws/application/ESafeDataServiceApplication.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="ELASTIC_APM_APPLICATION_PACKAGES" value=""/>
+<mapEntry key="ELASTIC_APM_ENABLE_LOG_CORRELATION" value="true"/>
+<mapEntry key="ELASTIC_APM_ENVIRONMENT" value="dev"/>
+<mapEntry key="ELASTIC_APM_GLOBAL_LABELS" value="app_family=sf,app_owner=ba0315"/>
+<mapEntry key="ELASTIC_APM_RECORDING" value="false"/>
+<mapEntry key="ELASTIC_APM_SERVER_URLS" value="http://elastic-collector-np-a.fhlmc.com:8200"/>
+<mapEntry key="ELASTIC_APM_SERVICE_NAME" value="sf-ba0315-slid_retrieval_service"/>
+<mapEntry key="ELASTIC_APM_VERIFY_SERVER_CERT" value="false"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenClassPathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.freddiemac.datamanager.ws.application.ESafeDataServiceApplication"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ESafeDataService"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenSourcePathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dspring.profiles.active=local -Dspring.profiles.include=application-local.yml"/>
+<booleanAttribute key="spring.boot.ansi.console" value="true"/>
+<stringAttribute key="spring.boot.app.properties" value=""/>
+<booleanAttribute key="spring.boot.dash.hidden" value="false"/>
+<booleanAttribute key="spring.boot.debug.enable" value="false"/>
+<booleanAttribute key="spring.boot.fast.startup" value="true"/>
+<booleanAttribute key="spring.boot.jmx.enable" value="true"/>
+<booleanAttribute key="spring.boot.lifecycle.enable" value="true"/>
+<stringAttribute key="spring.boot.lifecycle.termination.timeout" value="15000"/>
+<booleanAttribute key="spring.boot.livebean.enable" value="false"/>
+<stringAttribute key="spring.boot.livebean.port" value="0"/>
+<stringAttribute key="spring.boot.profile" value=""/>
+</launchConfiguration>

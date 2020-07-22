@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.padual.com/java/logback.xsd">
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d | %t | %X{appHostName} | %X{appRequestID} | %X{appRequestSystem} | %-5p | %F | %M | %L | %m %n</Pattern>
+		</layout>
+	</appender>
+	
+   <appender name="splunkServicesAppender" class="ch.qos.logback.core.ConsoleAppender">
+      <layout class="ch.qos.logback.classic.PatternLayout">
+         <Pattern>%m %n</Pattern>
+      </layout>
+   </appender>
+   
+	<logger name="com.freddiemac.datamanager" level="${APP_LOG_LEVEL:-INFO}" additivity="false">
+		<appender-ref ref="consoleAppender" />
+	</logger>
+
+   <logger name="com.freddiemac.datamanager.ws.splunk.logging" level="${APP_LOG_LEVEL:-INFO}" additivity="false">
+      <appender-ref ref="splunkServicesAppender" />
+   </logger>
+   
+	<root level="ERROR">
+      <appender-ref ref="consoleAppender" />
+   </root>
+</configuration>

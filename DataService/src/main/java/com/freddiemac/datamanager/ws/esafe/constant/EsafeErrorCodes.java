@@ -1,0 +1,57 @@
+package com.freddiemac.datamanager.ws.esafe.constant;
+
+/**
+ * This is the constants for Error Codes for SLS web service. Used for logging to simplify monitoring All ERROR Codes should go here and be segregated appropriately based on type of error.
+ *
+ * @author f352017, Todd Brunjes
+ */
+public class EsafeErrorCodes
+{
+
+   // SRS - System Errors - Critical for SysEdge Monitoring
+   public static final String EC_SRS_LDAP_AUTHENTICATION_EXCEPTION = "EC_SRS_LDAP_AUTHENTICATION_EXCEPTION";
+   public static final String EC_SRS_SYSTEM_FAILED = "EC_SRS_SYSTEM_FAILED";
+   public static final String EC_SRS_DATA_ACCESS_FAILED = "EC_SRS_DATA_ACCESS_FAILED";  
+   public static final String EC_SRS_NULL_REQUEST = "EC_SRS_NULL_REQUEST";
+   public static final String EC_SRS_JSON_TRANSLATION_FAILED = "EC_SRS_JSON_TRANSLATION_FAILED";
+   public static final String EC_SRS_NULL_OBJECT_EXCEPTION = "EC_SRS_NULL_OBJECT_EXCEPTION";
+   public static final String EC_SRS_OPEN_SHIFT_SECRETS_FETCH_EXCEPTION = "EC_SRS_OPEN_SHIFT_SECRETS_FETCH_EXCEPTION";
+
+   // SRS - System Errors - Major for SysEdge Monitoring
+   
+   // SRS - Nothing wrong with System - Minor for SysEdge Monitoring
+   public static final String EC_SRS_BAD_REQUEST = "EC_SRS_BAD_REQUEST";
+   public static final String EC_SRS_MARSHALLING_EXCEPTION = "EC_SRS_MARSHALLING_EXCEPTION";
+   public static final String EC_SRS_HOSTNAME_EXCEPTION = "EC_SRS_HOSTNAME_EXCEPTION";
+   public static final String EC_SRS_USERNAME_EXCEPTION = "EC_SRS_USERNAME_EXCEPTION";
+   public static final String EC_SRS_LOGGER_MDC_WARNING = "EC_SRS_LOGGER_MDC_WARNING";
+   public static final String EC_SRS_DATATYPE_CONFIGURATION_EXCEPTION = "EC_SRS_DATATYPE_CONFIGURATION_EXCEPTION";
+   public static final String EC_SRS_JSON_TRANSLATION_EXCEPTION = "EC_SRS_JSON_TRANSLATION_EXCEPTION";
+   public static final String EC_SRS_INVALID_CORRELATION_IDENTIFIER = "EC_SRS_INVALID_CORRELATION_IDENTIFIER";
+   public static final String EC_SRS_INVALID_SUBMISSION_ATTRIBUTES = "EC_SRS_INVALID_SUBMISSION_ATTRIBUTES";
+   public static final String EC_SRS_SUBMISSION_ATTRIBUTE_VIOLATED_DATABASE_CONSTRAINT = "EC_SRS_SUBMISSION_ATTRIBUTE_VIOLATED_DATABASE_CONSTRAINT";
+   
+   // SLMS - System Errors - Critical for SysEdge Monitoring          
+   public static final String EC_SRS_SLMS_SERVICE_FAILED = "EC_SRS_SLMS_SERVICE_FAILED";
+   public static final String EC_SRS_SLMS_NULL_RESPONSE = "EC_SRS_SLMS_NULL_RESPONSE";       
+   public static final String EC_SRS_SLMS_CORRELATION_IDENTIFIER_MATCHING_FAILED = "EC_SRS_SLMS_CORRELATION_IDENTIFIER_MATCHING_FAILED";
+   public static final String EC_SRS_SLMS_JSON_TRANSLATION_FAILED = "EC_SRS_SLMS_JSON_TRANSLATION_FAILED";
+
+   // SLMS - System Errors - Major for SysEdge Monitoring   
+
+   // SLMS - Nothing wrong with System - Minor for SysEdge Monitoring
+   public static final String EC_SRS_SLMS_SERVICE_UNREACHABLE = "EC_SRS_SLMS_SERVICE_UNREACHABLE";
+   public static final String EC_SRS_SLMS_JSON_TRANSLATION_EXCEPTION = "EC_SRS_SLMS_JSON_TRANSLATION_EXCEPTION";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_SLMSDECISION = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_SLMSDECISION";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY_WITHNOMATCH = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY_WITHNOMATCH";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY_MISMATCH = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_SURROGATEKEY_MISMATCH";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_MATCHINGCORRELATIONID_MISMATCH = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_MATCHINGCORRELATIONID_MISMATCH";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_MISMATCH_SURROGATEKEY = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_MISMATCH_SURROGATEKEY";   
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_HINDSIGHT_SURROGATEKEY = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_HINDSIGHT_SURROGATEKEY";
+   public static final String EC_SRS_SLMS_INVALID_SLMSRESPONSE_MISMATCH_HINDSIGHTKEYS = "EC_SRS_SLMS_INVALID_SLMSRESPONSE_MISMATCH_HINDSIGHTKEYS";
+   
+   private EsafeErrorCodes() {
+   }
+   
+}

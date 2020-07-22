@@ -1,0 +1,28 @@
+{
+  "title": "DataServiceResponseSchema",
+  "type" : "object",
+  "properties" : {
+    "ResponseMetaData" : {
+      "type" : "object",
+      "description" : "The Request MetaData for the input request.",
+      "properties" : {
+        "RequestIdentifier" : {
+          "type" : "string",
+          "description" : "The Request Identifier for the request; must be 36 characters in length."
+        },
+        "RequestSourceSystem" : {
+          "type" : "string",
+          "description" : "The Request Source System for request; must be not null and 1 to 100 characters in length."
+        },
+        "RequestTimeStamp" : {
+          "type" : "string",
+          "description" : "The Request TimeStamp for the request."
+        },
+        "RequestRecordCount" : {
+          "type" : "integer",
+          "description" : "The Request Record Count for submissions in the request; must be not null and value must be between 1 and 100."
+        }
+      }
+    }
+  }
+}

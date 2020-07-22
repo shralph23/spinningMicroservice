@@ -1,0 +1,26 @@
+{
+  "title": "SRSFaultTypeSchema",
+  "type" : "object",
+  "properties" : {
+    "ErrorCode" : {
+      "type" : "string",
+      "description" : "The error code for the exception being thrown."
+    },
+    "Message" : {
+      "type" : "string",
+      "description" : "The detailed fault message for the exception being thrown."
+    },
+    "KbArticleId" : {
+      "type" : "string",
+      "description" : "Respective KBArticle ID for the respective Error."
+    },
+    "TimeStamp" : {
+      "type" : "string",
+      "description" : "The Fault TimeStamp for the response."
+    },
+    "Uri" : {
+      "type" : "string",
+      "description" : "Uniform Resource Locator for the request."
+    }
+  }
+}

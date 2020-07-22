@@ -1,0 +1,29 @@
+#SubmissionLinkRestService local configuration
+#Active directory configuration
+AD_DOMAIN: "fhlmc.com"
+AD_URL: "ldaps://fhlmc.com"
+AD_GROUP: "slsdactg"
+AD_EXPIRATION_SECONDS: 600
+AD_MAX_RETRY_ATTEMPTS: 2
+AD_RETRY_DELAY_MS: 50
+    
+#Logging Levels
+FW_LOG_LEVEL: "INFO"
+APP_LOG_LEVEL: "DEBUG"
+
+#Swagger UI
+SW_ENABLE_FLAG: true
+
+#Hikari slrs datasource configuration
+SLS_DB_CLASSNAME: "com.ibm.db2.jcc.DB2Driver"
+SLS_DB_URL: "jdbc:db2://he3qlxvddbs1126:50001/SLSDDB2:currentSchema=UDBADM;"
+SLS_DB_USER: "slsddbd1"
+SLS_DB_SECRETS_LOCATION: "SLSDevDbWrite0219"
+
+#Hikari slrs connection pool configuration   
+SLS_DB_MAXIMUM_CP_SIZE: 15
+SLS_DB_MINIMUM_CP_IDLE: 1
+
+#MacVault alias for sls db
+SLS_DB_MAC_VAULT_ALIAS: "BA0315-SLS-DEV_slsddbd3_AD_FHLMC"
+SLS_DB_SECURITY_CODE_FETCH_TYPE: "Default"
